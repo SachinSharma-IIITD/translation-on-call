@@ -2,14 +2,14 @@
   "manifest_version": 3,
   "name": "Captions",
   "description": "Transcription",
-  "version": "1.1",
+  "version": "1.7",
   "action": {
     "default_popup": "my_index.html"
   },
   "permissions": ["activeTab"],
   "content_scripts": [
     {
-      "js": ["scripts/my_content.js"],
+      "js": ["scripts/my_content_with_timeout.js"],
       "matches": ["https://meet.google.com/*",
     "https://developer.chrome.com/docs/extensions/mv3/content_scripts/*"]
     }
